@@ -1,24 +1,27 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Mapa from './components/Mapa';
+import imglogoUbica from "./assets/img/ubica_logo_naranja.png"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="texto1">
+      <img src={imglogoUbica} alt="Logo ubicación" />
+        <p>EVALUADORES DE</p>
+        <p>CERTIFICACIÓN</p> 
+        <p> DE COMPETENCIAS</p> 
+        <p>LABORALES</p>
+        </div>
+      <div className="texto2">
+        <p>Ubica el departamento de tu
+preferencia para conocer los
+enlaces disponibles y sus
+datos de contacto.</p>
+      </div>
+    <Mapa></Mapa>
+      
     </div>
   );
 }
